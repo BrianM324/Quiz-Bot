@@ -1,0 +1,9 @@
+# File Types
+*.env
+
+# Files
+error-log.txt
+package-lock.json
+
+# Directories
+node_modules/

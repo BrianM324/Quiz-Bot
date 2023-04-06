@@ -1,0 +1,61 @@
+{
+	"quiz1": [
+		{
+			"question": "What is the capital of France?",
+			"options": ["Paris", "London", "Berlin", "Madrid"],
+			"correctIndex": 0
+		},
+		{
+			"question": "Which planet is closest to the sun?",
+			"options": ["Earth", "Venus", "Mercury", "Mars"],
+			"correctIndex": 2
+		},
+		{
+			"question": "Which is the largest ocean on Earth?",
+			"options": [
+				"Atlantic Ocean",
+				"Indian Ocean",
+				"Pacific Ocean",
+				"Arctic Ocean"
+			],
+			"correctIndex": 2
+		},
+		{
+			"question": "What is the tallest mountain in the world?",
+			"options": ["Mount Everest", "K2", "Kangchenjunga", "Lhotse"],
+			"correctIndex": 0
+		},
+		{
+			"question": "What is the largest country in the world by land area?",
+			"options": ["Russia", "Canada", "United States", "China"],
+			"correctIndex": 0
+		}
+	],
+	"quiz2": [
+		{
+			"question": "What is the largest mammal?",
+			"options": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+			"correctIndex": 1
+		},
+		{
+			"question": "What is the smallest planet in our solar system?",
+			"options": ["Earth", "Mars", "Venus", "Mercury"],
+			"correctIndex": 3
+		},
+		{
+			"question": "Which element is most abundant in the Earth's crust?",
+			"options": ["Oxygen", "Silicon", "Aluminum", "Iron"],
+			"correctIndex": 0
+		},
+		{
+			"question": "How many chromosomes do humans have?",
+			"options": ["23", "46", "48", "44"],
+			"correctIndex": 1
+		},
+		{
+			"question": "What is the fastest land animal?",
+			"options": ["Cheetah", "Lion", "Pronghorn Antelope", "Springbok"],
+			"correctIndex": 0
+		}
+	]
+}
