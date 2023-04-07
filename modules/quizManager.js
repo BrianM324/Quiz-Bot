@@ -1,5 +1,9 @@
 const { createCustomEmbed } = require("../embedHelper");
 const Quiz = require("./Quiz");
+const { assignRole } = require("./quizRoles");
+const {
+	quiz: { maxIncorrectAnswers },
+} = require("../config.json");
 
 const activeQuizzes = {};
 
@@ -9,7 +13,17 @@ async function doQuizButton(interaction) {
 	const answer = interaction.customId;
 	quiz.processAnswer(answer);
 
-	if (quiz.isLastQuestion()) return quiz.complete(interaction);
+	if (quiz.totalMissed() == maxIncorrectAnswers)
+		return quiz.complete(interaction);
+
+	if (quiz.isLastQuestion()) {
+		quiz.complete(interaction);
+
+		if (quiz.score() < 90) return;
+
+		const guildId = interaction.guildId;
+		return assignRole(guildId, quiz.id(), interaction.member);
+	}
 
 	await quiz.showNextQuestion(interaction);
 }

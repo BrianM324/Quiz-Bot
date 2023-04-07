@@ -45,15 +45,14 @@ class Quiz {
 			components: [],
 			ephemeral,
 		});
-
-		if (this.score() < 90) return;
-
-		const guildId = interaction.guildId;
-		assignRole(guildId, this.quizId, interaction.member);
 	}
 
 	hasQuiz() {
 		return this.active;
+	}
+
+	id() {
+		return this.quizId;
 	}
 
 	isActive() {
@@ -131,6 +130,10 @@ class Quiz {
 			components: [row],
 			ephemeral,
 		});
+	}
+
+	totalMissed() {
+		return this.answeredIncorrectly.length;
 	}
 }
 

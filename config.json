@@ -1,4 +1,7 @@
 {
-    "prefix": "!",
-    "errorLog": "error-log.txt"
- }
+	"errorLog": "error-log.txt",
+	"prefix": "!",
+	"quiz": {
+		"maxIncorrectAnswers": 3
+	}
+}
